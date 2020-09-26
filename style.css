@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #320b59;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+p {
+  color: #fff;
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif
+}
+  
+h1 {
+  color: #fff;
+}
+
+input {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-size: 20px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+::placeholder {
+  color: #fff
+}
+
+@keyframes change {
+  0% {
+    background-color: red;
+  } 50% {
+    background-color: blue;
+  } 100% { 
+    background-color: red;
+  }
+}
+    
