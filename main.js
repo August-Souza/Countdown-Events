@@ -1,6 +1,23 @@
-var x = setInterval(function setCount() {
-  document.querySelectorAll()
-  var countdown = new Date('01 01, 2021').getTime()
+var results = '';
+
+function myFunction() {
+  var x, i;
+  x = document.querySelectorAll(".date");
+  for (i = 0; i < x.length; i++) {
+    results = `${results} ${x[i].value}`;
+  }
+  return results
+};
+
+var x = setInterval(function setCount(result) {
+  var test = results
+  
+  
+  if(results=='') {
+    return document.getElementById('result').innerText = 'Waiting for a date';
+  }
+  
+  var countdown = new Date(test).getTime()
 
   var now = new Date().getTime();
 
