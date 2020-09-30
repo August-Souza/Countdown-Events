@@ -9,11 +9,13 @@
   </head>
   <body>
     <h1>Countdown Events<h1>
+      <p id="result"></p>
       <div>
-        <input type="number" id="dayEvent" placeholder="DD" value="" />
-        <input type="number" name="minuteEvent" placeholder="MM" value="" />
-        <input type="number" name="secondEvent" placeholder="YYYY" value="" />
+        <input type="number" class="date" id="dayEvent" placeholder="DD" value="01" />
+        <input type="number" class="date" id="minuteEvent" placeholder="MM" value="01" />
+        <input type="number" class="date" id="secondEvent" placeholder="YYYY" value="2021" />
       </div>
+      <button onclick="myFunction()">submit date</button>
       <script src="main.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
